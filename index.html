@@ -29,7 +29,7 @@
     .mdl-card__title {
       color: #100808;
       background-color: #f76b52;
-      font-style: calc(500);
+      font-style: var(Custom);
     }
 
     .centered-form {
@@ -56,7 +56,7 @@
         <!-- Card with form -->
         <div class="mdl-card mdl-shadow--2dp">
           <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">Welcome</h2>
+            <h2 class="mdl-card__title-text">Welcome To Orange.Co</h2>
           </div>
           <div class="mdl-card__supporting-text">
             <form id="welcomeForm">
@@ -69,6 +69,9 @@
               <div class="mdl-card__actions mdl-card--border">
                 <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
                   Submit
+                  {
+                    background-color:#f76b52;
+                  }
                 </button>
               </div>
             </form>
