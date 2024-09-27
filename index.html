@@ -3,7 +3,7 @@
     <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <title>107</title>
+    <title>Ryan</title>
     </head>
     <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
@@ -26,7 +26,7 @@
       </div>
     </header>
     <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">Title</span>
+      <span class="mdl-layout-title">Benos</span>
       <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="">Link</a>
         <a class="mdl-navigation__link" href="">Link</a>
@@ -44,8 +44,36 @@
         </div>
       </form>
       <button class="mdl-button mdl-js-button mdl-button--raised">
-        Button
+        Search
       </button>
+<!-- Welcome Message -->
+<div id="welcomeMessage"></div>
+
+</div>
+</div>
+
+</div>
+</main>
+</div>
+
+<!-- JavaScript to handle the form submission -->
+<script>
+  document.getElementById('welcomeForm').addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent page reload
+    var name = document.getElementById('name').value;
+    var welcomeMessage = document.getElementById('welcomeMessage');
+
+    // Display the welcome message
+    if (name) {
+      welcomeMessage.textContent = "Welcome, " + name + "!";
+    } else {
+      welcomeMessage.textContent = "Please enter your name!";
+    }
+  });
+</script>
+
+</body>
+</html>
     </main>
   </div>
     </body>
