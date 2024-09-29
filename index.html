@@ -68,7 +68,7 @@
               <!-- Submit Button -->
               <div class="mdl-card__actions mdl-card--border">
                 <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-                  submit
+                  Enter
                 </button>
               </div>
             </form>
@@ -83,16 +83,16 @@
     </main>
   </div>
 
-  <!-- JavaScript to handle the form submission -->
+  
   <script>
     document.getElementById('welcomeForm').addEventListener('submit', function (event) {
-      event.preventDefault(); // Prevent page reload
+      event.preventDefault(); //
       var name = document.getElementById('name').value;
       var welcomeMessage = document.getElementById('welcomeMessage');
 
       // Display the welcome message
       if (name) {
-        welcomeMessage.textContent = "Welcome, " + name + "!";
+        welcomeMessage.textContent = "Welcome to Orange.co, " + name + "!";
       } else {
         welcomeMessage.textContent = "Please enter your name!";
       }
